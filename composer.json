@@ -4,6 +4,7 @@
   "homepage": "http://developers.klarna.com",
   "license": "Apache-2.0",
   "type": "library",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Klarna AB"
