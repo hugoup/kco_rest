@@ -27,12 +27,12 @@ class UserAgent implements UserAgentInterface
     /**
      * Name of the SDK
      */
-    const NAME = 'Klarna.kco_rest_php';
+    public const NAME = 'Klarna.kco_rest_php';
 
     /**
      * Version of the SDK.
      */
-    const VERSION = '4.2.3';
+    public const VERSION = '4.2.3';
 
     /**
      * Components of the user agent.
@@ -109,7 +109,7 @@ class UserAgent implements UserAgentInterface
         $agent = new static();
 
         if (extension_loaded('curl')) {
-            $options[] = 'curl/' . curl_version()['version'];
+            $options[] = 'curl/' . \curl_version()['version'];
         }
 
         return $agent
